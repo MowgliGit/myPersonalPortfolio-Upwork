@@ -1,0 +1,182 @@
+/* Button.module.css */
+/* Button styles */
+.btnPrimary {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #e32b6b;
+  color: #f8f9fa;
+  padding: 1.8rem 3.6rem;
+  border-radius: 3rem;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+  margin-top: 3.2rem;
+}
+.btnPrimary:hover {
+  background-color: #e73674;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+.btnPrimary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btnPrimary::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  background: #e32b6b;
+  transition: all 0.3s;
+  filter: blur(0);
+  transform-origin: center center;
+  z-index: -1;
+}
+.btnPrimary:hover::after {
+  transform: scale(1.2);
+  opacity: 0;
+  filter: blur(3px);
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.headingPrimaryLink {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e9ecef;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btnSecondary {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #f8f9fa;
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  margin-top: 6.4rem;
+  padding: 1.4rem 2.8rem;
+  background-color: #e32b6b;
+  border-radius: 3rem;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s;
+  animation-name: moveInBottom;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInLBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btnSecondary:hover,
+.btnSecondary:active {
+  padding: 1.4rem 2.8rem;
+  background-color: #e73674;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btnSecondary::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  background: #e32b6b;
+  transition: all 0.3s;
+  filter: blur(0);
+  transform-origin: center center;
+  z-index: -2;
+}
+.btnSecondary:hover::after {
+  transform: scale(1.05);
+  opacity: 0;
+  filter: blur(1.5px);
+}
+.secondaryBtnLink {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f8f9fa;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center; /* Vertically center the text inside the link */
+}
+.arrowIcon {
+  color: #f8f9fa;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+/* bellow 1344px */
+@media (max-width: 84em) {
+  .headingPrimary {
+    font-size: 3rem;
+  }
+  .animatedHeadings {
+    font-size: 6.2rem;
+  }
+}
+/* Bellow 893px */
+@media (max-width: 55.81em) {
+}
+/* Bellow 567px */
+@media (max-width: 35.43em) {
+  .btnSecondary {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+    margin-top: 4.8rem;
+    padding: 1.4rem 2.9rem;
+  }
+}
+/* Bellow 400px */
+@media (max-width: 25em) {
+  .btnPrimary {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #e32b6b;
+    color: #f8f9fa;
+    padding: 1.8rem 2.4rem;
+    margin-top: 2.4rem;
+  }
+}

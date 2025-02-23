@@ -1,0 +1,194 @@
+.sectionFooter {
+  border-top: 1px solid #f8f9fa;
+  background-color: #031a31;
+  color: #f8f9fa;
+  height: auto;
+  padding: 1rem 0 1rem 0;
+  overflow: hidden;
+  height: auto;
+}
+.footerContainer {
+  padding: 1.8rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.headingQuaternary {
+  color: #f8f9fa;
+  font-size: 2.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  transition: all 0.3s;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+.headingQuaternary span {
+  padding-top: 1rem;
+  border-bottom: 3px solid #e32b6b;
+}
+.paragraphText {
+  width: 50%;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 500;
+  hyphens: auto;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.footerBtnLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  transition: all 0.3s;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+.btnFooterLink {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: fit-content;
+  padding: 1rem 2rem;
+  background-color: #021120;
+  border-radius: 3rem;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 10;
+  border: 1px solid #031a31;
+}
+
+.btnFooterLink:hover,
+.btnFooterLink:active {
+  background-color: #042546;
+  transform: translateY(-2px) scale(1.05); /* Add scale for hover effect */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.footerLink {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 500;
+  hyphens: auto;
+  color: #f8f9fa;
+  text-decoration: none;
+}
+.navIcon {
+  color: #ced4da;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+.navIcon:hover {
+  color: #f8f9fa;
+  transform: (-5px);
+}
+.copyRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  color: #f8f9fa;
+  padding: 1.2rem 0;
+  transition: all 0.3s;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+/* Bellow 847px */
+@media (max-width: 52.93em) {
+  .footerContainer {
+    padding: 1.8rem 3rem;
+  }
+}
+/* Bellow 567px */
+@media (max-width: 35.43em) {
+  .sectionFooter {
+    height: auto;
+  }
+
+  .footerContainer {
+    padding: 1.8rem 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .footerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+  .copyRight {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #f8f9fa;
+  }
+  .footerBtnLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+/* Bellow 400px */
+@media (max-width: 25em) {
+  .footerContainer {
+    padding: 1.8rem 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+  .copyRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

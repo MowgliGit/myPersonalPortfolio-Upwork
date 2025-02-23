@@ -1,0 +1,173 @@
+.sectionAboutBox {
+  background-color: #031a31;
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  max-width: 155rem;
+  z-index: 0;
+  margin-top: -7rem;
+}
+.headingQuarternary {
+  color: #f8f9fa;
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.navList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  gap: 1.2rem;
+  flex: 1;
+}
+.navLink {
+  color: #ced4da;
+  margin-bottom: 0;
+  flex: 1;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 1.8;
+}
+.academy {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  line-height: 1.8;
+  cursor: pointer;
+}
+.date {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+.vLine {
+  position: relative;
+  padding-left: 2rem;
+  color: #ced4da;
+}
+
+.vLine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #ced4da;
+}
+.description {
+  font-size: 1.8rem;
+  color: #ced4da;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+  display: inline-block;
+}
+/*  */
+.certificateModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.certificateContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.certificateImage {
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 5px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3.6rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: none;
+  color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.educationBox {
+  transition: all 0.3s;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+.experienceBox {
+  transition: all 0.3s;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Bellow 1344px */
+@media (max-width: 84em) {
+  .sectionAboutBox {
+    max-width: 135rem;
+    z-index: 0;
+    margin-top: -7rem;
+  }
+}
+/* Bellow 1200px */
+@media (max-width: 75em) {
+  .sectionAboutBox {
+    max-width: 120rem;
+    z-index: 0;
+    margin-top: -7rem;
+  }
+}
+/* Bellow 847px */
+@media (max-width: 52.93em) {
+  .sectionAboutBox {
+    max-width: 100rem;
+    z-index: 0;
+    margin-top: -7rem;
+  }
+}

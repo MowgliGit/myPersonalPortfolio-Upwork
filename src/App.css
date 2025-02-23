@@ -1,0 +1,326 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* 
+MAIN COLOR : #031a31; #e32b6b;
+TINTS:#f8f9fa; #e73674 ;
+GREY COLOR : #343a40 ;
+HEADINGMainf: #ced4da;
+
+BORDER RADIUS: 30px;
+FONT WEIGHT:
+Default: 400;
+Medium: 500;
+Semi-Bold: 600;
+Bold: 700
+
+letter-spacing: 
+0.75px;
+-0.5px
+LINE-HEIGHT:
+Default: 1
+1.05
+Paragraph default: 1.6
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html {
+  /*10 / 16 = 0.625 * 100 = 62.5 */
+  /* 1rem = 1em = 16px */
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  hyphens: auto;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #343a40;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  hyphens: auto;
+}
+
+.mainPage {
+  max-width: 155rem;
+  margin: 0 auto;
+}
+.container {
+  max-width: 135rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.section {
+  margin: 9.6rem 0;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.grid--2-cols {
+  grid-template-columns: 1fr 0.5fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8rem;
+}
+.grid--2--cols {
+  grid-template-columns: 0.7fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8rem;
+}
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 18rem;
+  position: relative;
+}
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-content: flex-start;
+  column-gap: 18rem;
+}
+.grid--2--col {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+}
+
+.grid-2-cols > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.4rem;
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: stretch;
+  gap: 6.4rem;
+}
+.mb {
+  margin-bottom: 6.4rem !important;
+}
+.pb {
+  padding-bottom: 12.8rem !important;
+}
+.pl {
+  padding-left: 1.8rem;
+}
+.subTitle {
+  display: inline-block;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 0 4.8rem 0;
+  transition: all 0.3s;
+  animation-name: moveInTop;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.headingTertiary {
+  font-size: 3.6rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.btnCentre {
+  text-align: center;
+  margin: 3.2rem 0;
+}
+/* Bellow 1344px */
+@media (max-width: 84em) {
+  .container {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+}
+/* Bellow 1200px */
+@media (max-width: 75em) {
+  html {
+    /*9 / 16 = */
+    /* 1rem = 1em = 16px */
+    overflow-x: hidden;
+    font-size: 56.25%;
+    scroll-behavior: smooth;
+    hyphens: auto;
+  }
+  .container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6.4rem;
+  }
+  .grid--2--cols {
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6.4rem;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 15rem;
+    position: relative;
+  }
+  .grid-2-col {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: flex-start;
+    column-gap: 15rem;
+  }
+}
+/* Bellow 950px */
+@media (max-width: 59.375em) {
+  html {
+    /*8 / 16 =  */
+    /* 1rem = 1em = 16px */
+    overflow-x: hidden;
+    font-size: 50%;
+    scroll-behavior: smooth;
+    hyphens: auto;
+  }
+}
+/* Bellow 847px */
+@media (max-width: 52.93em) {
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 3.2rem;
+    position: relative;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.2rem;
+  }
+  .grid--2--cols {
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.2rem;
+  }
+}
+/* Bellow 567px */
+@media (max-width: 35.43em) {
+  .section {
+    margin: 6.4rem 0;
+  }
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4.8rem;
+  }
+  .grid--2--cols {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4.8rem;
+  }
+  /* Bellow 400px */
+  @media (max-width: 25em) {
+    .section {
+      margin: 4.8rem 0 6.4rem 0;
+    }
+    .container {
+      max-width: 100rem;
+      margin: 0 auto;
+      padding: 0 2.4rem;
+    }
+    .grid-2-cols {
+      grid-template-columns: 1fr;
+      justify-content: space-between;
+      align-items: start;
+      position: relative;
+      row-gap: 3.2rem;
+    }
+    .grid--2-cols {
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      row-gap: 3.2rem;
+    }
+    .grid--2--cols {
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+      row-gap: 3.2rem;
+    }
+  }
+}
+/* FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

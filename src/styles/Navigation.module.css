@@ -1,0 +1,144 @@
+/* HeaderNavigation.module.css */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3.2rem;
+  position: relative;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #ced4da;
+  font-weight: 600;
+  position: absolute;
+  top: 3.2rem;
+  left: 3.2rem;
+  z-index: 999; /* Make sure it stays above the menu */
+}
+.logoBox {
+  z-index: 99999;
+}
+.menuBox {
+  background: none;
+  border: none;
+  color: #ced4da;
+  cursor: pointer;
+  z-index: 99999;
+  position: absolute; /* Keep it positioned without affecting layout */
+  top: 3.2rem;
+  right: 3.2rem;
+}
+.menuBtn,
+.closeBtn {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #ced4da;
+  cursor: pointer;
+}
+.closeBtn {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #ced4da;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*  Navigation styles */
+.nav {
+  background-color: rgba(3, 26, 49, 0.95);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 96vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  z-index: 50;
+  overflow: hidden;
+  /*  */
+}
+.navOpen {
+  animation-name: moveInTop;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+
+  overflow: hidden;
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navHidden {
+  animation: moveOutTop;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+  backface-visibility: hidden;
+  animation-fill-mode: backwards;
+
+  overflow: hidden;
+}
+@keyframes moveOutTop {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+/* Navigation List */
+.navList {
+  padding: 12.8rem 5rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 4rem;
+  z-index: 999;
+}
+.navLink {
+  text-decoration: none;
+  color: #ced4da;
+  font-size: 2.4rem;
+  font-weight: 600;
+  transition: color 0.2s;
+  cursor: pointer !important;
+}
+.active {
+  color: #f8f9fa;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+/*  */
+.navigationIconsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3.2rem;
+  margin-left: 2rem;
+}
+.navIcon {
+  color: #ced4da;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+.navIcon:hover {
+  color: #f8f9fa;
+  transform: (-5px);
+}
