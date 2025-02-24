@@ -2,11 +2,11 @@ import Navigation from "./Navigation";
 import Resume from "./Resume";
 import Skills from "./Skills";
 import Logo from "./Logo";
-import ButtonPrimary from "./ButtonPrimary";
 import styles from "../styles/About.module.css";
 import Footer from "./Footer";
 import "../App.css";
 import { Link } from "react-router-dom";
+import ButtonSection from "./ButtonSection";
 
 export default function About() {
   return (
@@ -24,7 +24,7 @@ export default function About() {
             </h2>
           </div>
           <div className="btnCentre">
-            <ButtonPrimary text="View My Resume" link="#sectionResume" />
+            <ButtonSection text="View My Resume" link="#sectionResume" />
           </div>
         </div>
       </section>

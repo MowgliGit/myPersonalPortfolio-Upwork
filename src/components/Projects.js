@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Navigation from "./Navigation";
-import ButtonPrimary from "./ButtonPrimary";
+import ButtonSection from "./ButtonSection";
 import Footer from "./Footer";
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
@@ -162,7 +162,7 @@ const Projects = ({ isMenuVisible, toggleMenu }) => {
             </h2>
           </div>
           <div className="btnCentre">
-            <ButtonPrimary text="Check Out My Work" link="#sectionProjectBox" />
+            <ButtonSection text="Check Out My Work" link="#sectionProjectBox" />
           </div>
         </div>
       </section>

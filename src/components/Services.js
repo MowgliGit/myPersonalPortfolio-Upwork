@@ -1,9 +1,9 @@
 import Navigation from "./Navigation";
-import ButtonPrimary from "./ButtonPrimary";
 import styles from "../styles/Services.module.css";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "../App.css";
+import ButtonSection from "./ButtonSection";
 const servicesItems = [
   {
     icon: "icons8-responsive-design-50.png",
@@ -66,7 +66,7 @@ const Services = () => {
             <h2 className={styles.headingSecondary}>What You’ll Get</h2>
           </div>
           <div className="btnCentre">
-            <ButtonPrimary text="View Services" link="#sectionServicesPlan" />
+            <ButtonSection text="View Services" link="#sectionServicesPlan" />
           </div>
         </div>
       </section>

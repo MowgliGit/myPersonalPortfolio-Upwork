@@ -1,9 +1,9 @@
 import Navigation from "./Navigation";
-import ButtonPrimary from "./ButtonPrimary";
 import styles from "../styles/Prices.module.css";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../App.css";
+import ButtonSection from "./ButtonSection";
 
 // Pricing data
 const pricingData = [
@@ -134,7 +134,7 @@ const Prices = ({ isMenuVisible, toggleMenu }) => {
             </h2>
           </div>
           <div className="btnCentre">
-            <ButtonPrimary
+            <ButtonSection
               text="View Pricing Plans"
               link="#sectionPricingBox"
             />

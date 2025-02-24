@@ -11,7 +11,7 @@ export default function VisionHome() {
             Got a Vision? Let’s Bring It to Life
           </h1>
 
-          <ButtonPrimary text="Pricing & Offers" link="/Prices " />
+          <ButtonPrimary text="Pricing & Offers" link="/Prices" />
         </div>
       </section>
     </>
