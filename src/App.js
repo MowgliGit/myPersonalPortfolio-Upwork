@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -8,7 +8,7 @@ import Prices from "./components/Prices";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <Router>
+    <Router basename="/myPersonalPortfolioForUpwork">
       <div className="mainPage">
         <Routes>
           <Route path="/" element={<Home />} />
