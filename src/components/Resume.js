@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IonIcon } from "@ionic/react";
-import { openOutline } from "ionicons/icons";
+
 import styles from "../styles/Resume.module.css";
 import { Link } from "react-router-dom";
 import "../App.css";
@@ -77,7 +77,6 @@ export default function Resume() {
                 onClick={() => handleCertificateClick(item.certificateUrl)}
               >
                 {item.academy}
-                <IonIcon icon={openOutline} className={styles.icon} />
               </span>
               <br />
               <span className={styles.date}>{item.date}</span>
