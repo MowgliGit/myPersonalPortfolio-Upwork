@@ -8,7 +8,7 @@ const ButtonPrimary = ({ text = "Default Text", link = "#" }) => {
     <div className={styles.btnPrimary}>
       <a
         href={link}
-        target={isExternalLink ? "_blank" : "_self"} // Open external links in a new tab
+        target={isExternalLink ? "_blank" : "_self"}
         rel={isExternalLink ? "noopener noreferrer" : ""}
         className={styles.headingPrimaryLink}
       >

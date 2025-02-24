@@ -13,7 +13,7 @@ import Prices from "./components/Prices";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <Router>
+    <Router basename="/mypersonalwebsite">
       <div className="mainPage">
         <Routes>
           <Route path="/" element={<Home />} />
