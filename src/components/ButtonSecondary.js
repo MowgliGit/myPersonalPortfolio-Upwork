@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/Buttons.module.css";
-import "../App.css";
+
 const ButtonSecondary = ({ text = "Default Text", link = "#" }) => {
   const isExternalLink = link.startsWith("https");
 
@@ -11,19 +11,16 @@ const ButtonSecondary = ({ text = "Default Text", link = "#" }) => {
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className={styles.secondaryBtnLink}
+          className={styles.headingSecondaryLink}
         >
-          {text}{" "}
+          {text}
         </a>
       ) : (
-        <Link to={link} className={styles.secondaryBtnLink}>
-          {text}{" "}
+        // Make sure to use Link here for internal navigation
+        <Link to={link} className={styles.headingSecondaryLink}>
+          <button className={styles.button}>{text}</button>
         </Link>
       )}
-      <ion-icon
-        name="arrow-forward-outline"
-        className={styles.arrowIcon}
-      ></ion-icon>
     </div>
   );
 };

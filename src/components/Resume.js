@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/Resume.module.css";
+import { Link } from "react-router-dom";
 import "../App.css";
 export default function Resume() {
   const [selectedCertificate, setSelectedCertificate] = useState(null);

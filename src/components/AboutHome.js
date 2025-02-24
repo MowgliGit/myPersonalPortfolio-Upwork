@@ -3,6 +3,7 @@ import "../App.css";
 import Navigation from "./Navigation";
 import ButtonSecondary from "./ButtonSecondary";
 import styles from "../styles/Home.module.css";
+import { Link } from "react-router-dom";
 
 export default function AboutMe({ isMenuVisible, toggleMenu }) {
   return (

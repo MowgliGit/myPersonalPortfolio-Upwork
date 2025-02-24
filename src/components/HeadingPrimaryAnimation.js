@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/HeadingPrimaryAnimation.module.css";
 import ButtonPrimary from "./ButtonPrimary";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const HeadingPrimaryAnimation = () => {
   const headings = ["React Developer", "Web Designer", "Mowgli"];

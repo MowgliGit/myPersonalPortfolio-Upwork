@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "../styles/Logo.module.css";
 import ButtonPrimary from "./ButtonPrimary";
+import { Link } from "react-router-dom";
 import "../App.css";
 const logoImages = [
   { image: "htmlLogo.png" },

@@ -6,6 +6,7 @@ import ButtonPrimary from "./ButtonPrimary";
 import styles from "../styles/About.module.css";
 import Footer from "./Footer";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (

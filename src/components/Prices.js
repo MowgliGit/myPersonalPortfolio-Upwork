@@ -2,6 +2,7 @@ import Navigation from "./Navigation";
 import ButtonPrimary from "./ButtonPrimary";
 import styles from "../styles/Prices.module.css";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 // Pricing data

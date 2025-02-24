@@ -2,7 +2,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import styles from "../styles/Contact.module.css";
 import "../App.css";
-
+import { Link } from "react-router-dom";
 export default function Contact() {
   return (
     <>

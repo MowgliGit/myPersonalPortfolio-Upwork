@@ -7,6 +7,7 @@ import VisionHome from "./VisionHome";
 import TestimonialsHome from "./TestimonialsHome";
 import Footer from "./Footer";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);

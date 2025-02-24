@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/Buttons.module.css";
-import "../App.css";
 
 const ButtonPrimary = ({ text = "Default Text", link = "#" }) => {
   const isExternalLink = link.startsWith("https");
@@ -18,7 +17,7 @@ const ButtonPrimary = ({ text = "Default Text", link = "#" }) => {
         </a>
       ) : (
         <Link to={link} className={styles.headingPrimaryLink}>
-          {text}{" "}
+          {text}
         </Link>
       )}
     </div>
