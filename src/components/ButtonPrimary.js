@@ -16,9 +16,10 @@ const ButtonPrimary = ({ text = "Default Text", link = "#" }) => {
           {text}
         </a>
       ) : (
-        <Link to={link} className={styles.headingPrimaryLink}>
+        // Use <a> tag for internal links to enable scrolling to sections
+        <a href={link} className={styles.headingPrimaryLink}>
           {text}
-        </Link>
+        </a>
       )}
     </div>
   );

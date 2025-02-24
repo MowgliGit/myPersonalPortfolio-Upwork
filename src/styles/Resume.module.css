@@ -12,6 +12,10 @@
   font-weight: 500;
   margin-bottom: 3.2rem;
 }
+.icon {
+  color: #ced4da;
+  font-size: 1.6rem;
+}
 .navList {
   list-style-type: none;
   display: flex;
