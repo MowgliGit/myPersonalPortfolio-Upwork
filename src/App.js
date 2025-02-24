@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  UNSAFE_getPatchRoutesOnNavigationFunction,
-} from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -13,7 +8,7 @@ import Prices from "./components/Prices";
 import Contact from "./components/Contact";
 function App() {
   return (
-    <Router basename="/mypersonalwebsite">
+    <Router>
       <div className="mainPage">
         <Routes>
           <Route path="/" element={<Home />} />
