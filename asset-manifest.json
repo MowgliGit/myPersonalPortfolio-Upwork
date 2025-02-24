@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/myPersonalPortfolio-Upwork/static/css/main.9a18191c.css",
+    "main.js": "/myPersonalPortfolio-Upwork/static/js/main.43b11837.js",
+    "static/js/488.0dd26581.chunk.js": "/myPersonalPortfolio-Upwork/static/js/488.0dd26581.chunk.js",
+    "static/media/projects.jpg": "/myPersonalPortfolio-Upwork/static/media/projects.5a562bc2c242d0eca035.jpg",
+    "static/media/home.png": "/myPersonalPortfolio-Upwork/static/media/home.42f9404c582fe1c87eff.png",
+    "static/media/project.jpg": "/myPersonalPortfolio-Upwork/static/media/project.d2bfecf40b5654280980.jpg",
+    "static/media/contact.webp": "/myPersonalPortfolio-Upwork/static/media/contact.67ef19f6f5d31398cb19.webp",
+    "static/media/vision.webp": "/myPersonalPortfolio-Upwork/static/media/vision.e7bb54fc3ff68c3bdce4.webp",
+    "static/media/about.webp": "/myPersonalPortfolio-Upwork/static/media/about.5b0c5a49285434d6abb0.webp",
+    "static/media/prices.webp": "/myPersonalPortfolio-Upwork/static/media/prices.c0fdf354d5715f0c6d83.webp",
+    "index.html": "/myPersonalPortfolio-Upwork/index.html",
+    "main.9a18191c.css.map": "/myPersonalPortfolio-Upwork/static/css/main.9a18191c.css.map",
+    "main.43b11837.js.map": "/myPersonalPortfolio-Upwork/static/js/main.43b11837.js.map",
+    "488.0dd26581.chunk.js.map": "/myPersonalPortfolio-Upwork/static/js/488.0dd26581.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a18191c.css",
+    "static/js/main.43b11837.js"
+  ]
+}
