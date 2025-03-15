@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Link, Routes, Route } from "react-router-dom";
 import Navigation from "./Navigation";
 import ButtonSection from "./ButtonSection";
+import ProjectDetails from "./ProjectDetails";
 import Footer from "./Footer";
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import "../App.css";
 const projectsData = [
   {
@@ -15,7 +16,7 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Nonprofit Organization",
+    title: "Nonprofit Org",
     category: "React",
     image: "charito.png",
     link: "https://mowgligit.github.io/charitoNonProfitOrg/",
@@ -64,14 +65,14 @@ const projectsData = [
   },
   {
     id: 9,
-    title: "My Digital Resume",
+    title: "Digital Resume",
     category: "Bootstrap",
     image: "resume.png",
     link: "https://digitalresumecv.netlify.app/",
   },
   {
     id: 10,
-    title: "Natural Deodorant",
+    title: "Nat. Deodorant",
     category: "Bootstrap",
     image: "antiperspirant.png",
     link: "https://website-for-natural-antiperspirant.netlify.app/",
@@ -123,14 +124,14 @@ const projectsData = [
 
   {
     id: 17,
-    title: "Handmade Soap",
+    title: "Organic Soap",
     category: "HTML&CSS",
     image: "soap.png",
     link: "https://website-for-soap.netlify.app/",
   },
   {
     id: 18,
-    title: "Mountain Website",
+    title: "Mountain Event",
     category: "HTML&CSS",
     image: "mountain.png",
     link: "https://websiteformountain.netlify.app/",
@@ -227,14 +228,20 @@ const Projects = ({ isMenuVisible, toggleMenu }) => {
                       </h6>
                     </div>
                     <button className={styles.btnLinkProject}>
-                      <a
+                      {/* <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.projectsLink}
                       >
                         View
-                      </a>
+                      </a> */}
+                      <Link
+                        to={`/projects/${project.id}`}
+                        className={styles.projectsLink}
+                      >
+                        View Details
+                      </Link>
                     </button>
                   </div>
                 </div>
@@ -243,6 +250,9 @@ const Projects = ({ isMenuVisible, toggleMenu }) => {
           </div>
         </div>
       </section>
+      <Routes>
+        <Route path=":id" element={<ProjectDetails />} />
+      </Routes>
       <Footer />
     </>
   );

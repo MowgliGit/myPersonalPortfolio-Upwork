@@ -12,29 +12,36 @@ export default function Resume() {
       index: "00",
       name: "Introduction to Web Development",
       academy: "Creative Hub",
-      date: "12/2021 - 02/2022", // Standardized date format
+      date: "12/2021 - 12/2021",
       certificateUrl: "creative.png",
     },
     {
       index: "01",
-      name: "Front-End Web Development Course",
-      academy: "Javen Advertising",
-      date: "02/2022 - 05/2022", // Standardized date format
-      certificateUrl: "javen.png",
+      name: "Responsive Web Design Course – HTML&CSS",
+      academy: "Udemy",
+      date: "01/2021 - 05/2022",
+      certificateUrl: "html&css.jpg",
     },
     {
       index: "02",
-      name: "Self-Taught JavaScript Developer",
+      name: "Bootstrap 5 Course – From Scratch with Projects",
       academy: "Udemy",
-      date: "05/2022 - 03/2023", // Standardized date format
-      certificateUrl: "javascript.jpg",
+      date: "05/2022 - 06/2022",
+      certificateUrl: "html&css.jpg",
     },
     {
       index: "03",
+      name: "Self-Taught JavaScript Developer",
+      academy: "Udemy",
+      date: "09/2022 - 03/2023",
+      certificateUrl: "javascript.jpg",
+    },
+    {
+      index: "04",
       name: "Front-End Programming with JS and React",
       academy: "SMX Academy",
-      date: "04/2024 - 05/2024", // Standardized date format
-      certificateUrl: "react.png", // Corrected path
+      date: "04/2024 - 05/2024",
+      certificateUrl: "react.png",
     },
   ];
 
@@ -43,13 +50,13 @@ export default function Resume() {
       index: "00",
       name: "HTML & CSS Developer",
       description:
-        "Created responsive, well-structured web pages using HTML and CSS, ensuring clean layouts and an optimal viewing experience across all devices.",
+        "As an HTML & CSS Developer with expertise in Bootstrap, I create fully responsive, well-structured, and visually appealing web pages. My focus is on delivering clean layouts and seamless user experiences across all devices.",
     },
     {
       index: "01",
       name: "Jr. JavaScript Developer",
       description:
-        "Added interactivity to websites using JavaScript, including animations, user event handling, and enhancing functionality.",
+        "Added interactivity to websites using JavaScript, including animations, user event handling, and enhanced functionality to improve user experience and site performance. Also collaborated with design teams to implement seamless, interactive features that align with the overall user interface.",
     },
     {
       index: "02",

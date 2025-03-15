@@ -66,7 +66,6 @@
   animation-timing-function: ease-in-out;
   backface-visibility: hidden;
   animation-fill-mode: backwards;
-
   overflow: hidden;
 }
 @keyframes moveInTop {
@@ -86,7 +85,6 @@
   animation-timing-function: ease-in-out;
   backface-visibility: hidden;
   animation-fill-mode: backwards;
-
   overflow: hidden;
 }
 @keyframes moveOutTop {
@@ -107,7 +105,7 @@
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 4rem;
+  gap: 3.2rem;
   z-index: 999;
 }
 .navLink {

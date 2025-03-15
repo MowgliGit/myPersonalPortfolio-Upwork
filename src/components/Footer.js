@@ -1,46 +1,43 @@
 import styles from "../styles/Footer.module.css";
 import "../App.css";
 import { Link } from "react-router-dom";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear(); // Get the current year
   return (
     <>
-      <div className={` ${styles.sectionFooter} `}>
-        <div>
-          <div className={styles.footerContainer}>
-            <div className={styles.footerContact}>
-              <h4 className={styles.headingQuaternary}>
-                <span>Contact me</span>
-              </h4>
-
-              <p className={styles.copyRight}>
-                <p>Copyright © {currentYear} Mowgli.</p>
-                <p>All Rights Reserved.</p>
-              </p>
+      <div className={`${styles.sectionFooter}`}>
+        <div className={styles.footerContainer}>
+          <div className={styles.footerContact}>
+            <h4 className={styles.headingQuaternary}>
+              <span>Contact me</span>
+            </h4>
+            <div className={styles.copyRight}>
+              <p>Copyright © {currentYear} All Rights Reserved. </p>
             </div>
-            <div className={styles.footerBtnLinks}>
+          </div>
+
+          <div className={styles.footerBtnLinks}>
+            <button className={`${styles.btnFooterLink}`}>
+              <i className={`fa-solid fa-envelope ${styles.navIcon}`}></i>
+              <a
+                href="mailto:themowglicoder@gmail.com"
+                className={styles.footerLink}
+              >
+                themowglicoder@gmail.com
+              </a>
+            </button>
+
+            <div className={styles.contactBtns}>
               <button className={styles.btnFooterLink}>
-                <ion-icon
-                  name="mail-outline"
-                  className={styles.navIcon}
-                ></ion-icon>
+                <i
+                  className={`fa-brands fa-square-upwork ${styles.navIcon}`}
+                ></i>
                 <a
-                  href="mailto:themowglicoder@gmail.com"
+                  href="https://www.upwork.com/freelancers/~01741f500be36f1cbe"
                   className={styles.footerLink}
                 >
-                  themowglicoder@gmail.com
-                </a>
-              </button>
-              <button className={styles.btnFooterLink}>
-                <ion-icon
-                  name="logo-linkedin"
-                  className={styles.navIcon}
-                ></ion-icon>
-                <a
-                  href="https://www.linkedin.com/in/marina-jovanova/"
-                  className={styles.footerLink}
-                >
-                  Linkedin
+                  Upwork
                 </a>
               </button>
             </div>

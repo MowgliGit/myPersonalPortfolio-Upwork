@@ -16,8 +16,8 @@ export default function Navigation() {
     { index: "01", name: "About", link: "/about" },
     { index: "02", name: "Services", link: "/services" },
     { index: "03", name: "Projects", link: "/projects" },
-    { index: "04", name: "Prices", link: "/prices" },
-    { index: "05", name: "Contact", link: "/contact" },
+    { index: "05", name: "Prices", link: "/prices" },
+    { index: "06", name: "Contact", link: "/contact" },
   ];
 
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -72,12 +72,7 @@ export default function Navigation() {
                 className={styles.navIcon}
               ></ion-icon>
             </a>
-            <a href="https://www.linkedin.com/in/marina-jovanova/">
-              <ion-icon
-                name="logo-linkedin"
-                className={styles.navIcon}
-              ></ion-icon>
-            </a>
+
             <a href="https://app.netlify.com/teams/marina-jovanova17/sites">
               <ion-icon
                 name="person-circle-outline"

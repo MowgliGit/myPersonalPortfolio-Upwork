@@ -1,4 +1,4 @@
-import ButtonPrimary from "./ButtonPrimary";
+import ButtonSecondary from "./ButtonSecondary";
 import styles from "../styles/Home.module.css";
 import { Link } from "react-router-dom";
 import "../App.css";
@@ -10,8 +10,9 @@ export default function VisionHome() {
           <h1 className={styles.headingPrimary}>
             Got a Vision? Let’s Bring It to Life
           </h1>
-
-          <ButtonPrimary text="Pricing & Offers" link="/Prices" />
+          <div className={styles.buttonWrapper}>
+            <ButtonSecondary text="Pricing & Offers" link="/Prices" />
+          </div>
         </div>
       </section>
     </>

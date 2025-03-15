@@ -15,11 +15,11 @@ const pricingData = [
     price: "$150 - $300",
     includes: [
       "One-page website",
-      "Landing Pages",
       "Responsive design",
       "Basic SEO optimization",
-      "Layout structuring",
       "1 round of revisions",
+      "Social media integration",
+      "CMS Implementation",
     ],
   },
   {
@@ -34,8 +34,9 @@ const pricingData = [
       "SEO optimization",
       "2 rounds of revisions",
       "HTML/CSS/JS Dev",
-      "CSS/JS animations",
+      "CSS animations",
       "Social media integration",
+      "CMS Implementation",
     ],
   },
   {
@@ -48,10 +49,12 @@ const pricingData = [
       "Multi-page website",
       "Responsive design",
       "Advanced SEO opt.",
-      "3 rounds of revisions",
-      "Custom Illustration Set",
+      "4 rounds of revisions",
       "CSS/JS animations",
-      "React & JS for dynamic sites",
+      "HTML/CSS/JS/React Dev",
+      "API Integration",
+      "Social media integration",
+      "CMS Implementation",
     ],
   },
 ];
@@ -100,7 +103,9 @@ const PricingCard = ({
                     className={styles.icon}
                   ></ion-icon>
                 </span>
-                <li className={styles.cardListItem}>{item}</li>
+                <li className={styles.cardListItem}>
+                  <p>{item}</p>
+                </li>
               </div>
             ))}
           </ul>

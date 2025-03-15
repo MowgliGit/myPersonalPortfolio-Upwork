@@ -5,19 +5,19 @@ import "../App.css";
 const testimonials = [
   {
     id: 1,
-    text: "An exceptionally talented front-end developer with a keen eye for both design aesthetics and performance optimization. Their ability to bring creative ideas to life through clean, responsive, and well-structured code ensures that every project not only looks stunning but also functions flawlessly across all devices. Whether it's crafting pixel-perfect layouts or optimizing site speed, their expertise shines in every aspect of front-end development.",
+    text: "I was blown away by how amazing my website turned out! It’s not just beautiful but also works perfectly on any device. It’s like magic how everything just fits together, from the design to the speed. I never realized how important these things were until I saw my site in action. It’s clear this developer really knows their stuff and cares about making everything look and work just right.",
   },
   {
     id: 2,
-    text: "With an unwavering commitment to excellence, this developer crafts visually appealing and highly functional websites that prioritize user experience. Their meticulous attention to detail, coupled with a deep understanding of front-end technologies, allows them to deliver solutions that are not only beautiful but also intuitive and seamless for end users. Their passion for modern web development is evident in their ability to balance aesthetics with functionality effortlessly.",
+    text: "I couldn’t be happier with the website! It’s exactly what I needed both beautiful and easy to use. Everything is so simple and intuitive, and it’s clear that a lot of thought went into how users will interact with the site. I love how modern it looks, and it works perfectly on my phone, tablet, and computer. You can tell they’re passionate about making sure every detail is spot on.",
   },
   {
     id: 3,
-    text: "Passionate about creating immersive and engaging user experiences, this developer utilizes modern web technologies to build highly interactive and dynamic interfaces. Their dedication to precision and quality ensures that every project is polished to perfection, with a focus on usability, accessibility, and performance optimization. They constantly stay up to date with the latest industry trends, incorporating innovative techniques to enhance the overall browsing experience.",
+    text: "The experience with this developer was fantastic. She created a website that’s not only interactive but also super easy to navigate. I was amazed at how well everything flowed, and it felt like the site was designed just for me. It’s clear they stay on top of the latest trends because my website feels fresh and modern. I didn’t even know what ‘responsive’ meant before, but now I see how important it is!",
   },
   {
     id: 4,
-    text: "Transforms complex designs into smooth, interactive, and visually stunning websites. With a deep understanding of front-end frameworks, animations, and user interaction patterns, they ensure that every website they develop is not only functional but also captivating. Their ability to troubleshoot challenges and optimize performance makes them an invaluable asset to any development team, always striving for the highest standards in web design and development.",
+    text: "This developer took a complex idea and turned it into something visually stunning and easy to use. The website is interactive and smooth, and it really stands out. I never knew how much work went into making sure everything works perfectly, but they really made it happen. Every time I had a question, they were quick to help and made sure the site performed great. I’m really impressed with their dedication to getting everything just right.",
   },
 ];
 

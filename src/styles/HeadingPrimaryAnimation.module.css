@@ -28,12 +28,14 @@
   align-items: center;
   gap: 2rem;
 }
-.headingPrimary {
+.paragraphPrimary {
+  max-width: 95rem;
   font-size: 3.6rem;
+  text-align: center;
   color: #ced4da;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.5;
   animation-name: moveInTop;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -64,7 +66,7 @@
   overflow: hidden;
 }
 .animatedHeadings {
-  font-size: 7.4rem;
+  font-size: 6.2rem;
   font-weight: 600;
   color: #ced4da;
   text-transform: uppercase;
@@ -76,6 +78,10 @@
   background-image: linear-gradient(to right, #f8f9fa, #adb5bd);
   -webkit-background-clip: text;
   color: transparent;
+}
+.btnsPrimaryHero {
+  display: flex;
+  gap: 1.2rem;
 }
 /* bellow 1344px */
 @media (max-width: 84em) {
@@ -104,10 +110,21 @@
   .containerHeadingPrimaryAnimation {
     max-width: 100rem;
     margin: 0 auto;
-    padding: 12rem 3rem;
+    padding: 12rem 2.4rem;
   }
   .animatedHeadings {
-    font-size: 5.2rem;
+    font-size: 4.4rem;
+  }
+  .paragraphPrimary {
+    max-width: 80rem;
+    font-size: 3rem;
+  }
+}
+/* Bellow 651px */
+@media (max-width: 40.68em) {
+  .paragraphPrimary {
+    max-width: 75rem;
+    font-size: 3rem;
   }
 }
 /* Bellow 567px */
@@ -115,10 +132,18 @@
   .containerHeadingPrimaryAnimation {
     max-width: 100rem;
     margin: 0 auto;
-    padding: 15rem 3.2rem;
+    padding: 13rem 2.4rem;
   }
   .animatedHeadings {
-    font-size: 4rem;
+    font-size: 3.8rem;
+  }
+  .paragraphPrimary {
+    font-size: 2.8rem;
+  }
+  .btnsPrimaryHero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
   }
 }
 /* Bellow 420px */
@@ -126,13 +151,14 @@
   .containerHeadingPrimaryAnimation {
     max-width: 100rem;
     margin: 0 auto;
-    padding: 15rem 1.2rem;
-  }
-  .headingPrimary {
-    font-size: 2.8rem;
+    padding: 10rem 0.8rem;
   }
   .animatedHeadings {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  .paragraphPrimary {
+    font-size: 2.8rem;
   }
   .headingBox {
     min-height: 20rem;
@@ -145,11 +171,11 @@
 }
 /* Bellow 380px */
 @media (max-width: 23.75em) {
-  .headingPrimary {
-    font-size: 2.6rem;
+  .paragraphPrimary {
+    font-size: 2.4rem;
   }
   .animatedHeadings {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 /* FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 

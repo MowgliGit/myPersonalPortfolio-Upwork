@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/HeadingPrimaryAnimation.module.css";
 import ButtonPrimary from "./ButtonPrimary";
+import ButtonCta from "./ButtonCta";
 import "../App.css";
 import { Link } from "react-router-dom";
 
 const HeadingPrimaryAnimation = () => {
-  const headings = ["React Developer", "Web Designer", "Mowgli"];
+  const headings = [
+    "Hi I'm a",
+    "Freelancer",
+    "Front-End Developer",
+    "Web Designer",
+  ];
   const [currentIndex, setCurrentIndex] = useState(0); // Track current heading index
   const [displayText, setDisplayText] = useState(""); // Display letters incrementally
   const [letterIndex, setLetterIndex] = useState(0); // Track current letter index
@@ -33,13 +39,17 @@ const HeadingPrimaryAnimation = () => {
   return (
     <div className={styles.containerHeadingPrimaryAnimation}>
       <div className={styles.headingBox}>
-        <h1 className={styles.headingPrimary}>
-          <span>Hi, I'm a freelancer</span>
-        </h1>
         <div className={styles.headerAnimation}>
           <h1 className={styles.animatedHeadings}>{displayText}</h1>
         </div>
-        <ButtonPrimary text="View My Works" link="/projects" />
+        <p className={styles.paragraphPrimary}>
+          I build custom, modern, and responsive websites. no WordPress or
+          Shopify involved{" "}
+        </p>
+        <div className={styles.btnsPrimaryHero}>
+          <ButtonPrimary text="View My Works" link="/projects" />
+          <ButtonCta text="Let's Work Together" link="/contact" />
+        </div>
       </div>
     </div>
   );

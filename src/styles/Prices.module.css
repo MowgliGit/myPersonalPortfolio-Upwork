@@ -171,7 +171,7 @@
   flex-direction: column;
   max-width: none;
   width: 100%;
-  height: 65rem;
+  height: 75rem;
   border-radius: 3rem;
   box-sizing: border-box;
   transition: all 0.3s;
@@ -188,7 +188,7 @@
   width: 100%;
   backface-visibility: hidden;
   border-radius: 3rem;
-  height: 65rem;
+  height: 75rem;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 .pricingCard:hover .pricingCardSideFront {
@@ -262,6 +262,7 @@
   display: flex;
   align-items: start;
   gap: 1rem;
+  hyphens: auto;
 }
 .cardList {
   list-style: none;
@@ -274,7 +275,7 @@
 }
 .cardItem ion-icon {
   flex-shrink: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 4px;
 }
 .cardListItem {
@@ -287,10 +288,11 @@
   color: #f8f9fa;
   font-weight: 500;
   flex: 1;
+  hyphens: manual;
 }
 .icon {
   color: #ced4da;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 /* back card side */
 .pricingCardSideBack {
@@ -409,7 +411,7 @@
     font-size: 2rem;
   }
   .cardDetails {
-    padding: 2.4rem 0.5rem;
+    padding: 2.4rem 0rem;
   }
   .cardListItem {
     display: flex;
@@ -436,13 +438,13 @@
   .containerPrices {
     max-width: 100rem;
     margin: 0 auto;
-    padding: 9rem 3rem;
+    padding: 9rem 2.4rem;
   }
   .containerPricing {
     max-width: 100rem;
     margin: 0 auto;
     text-align: center;
-    padding: 5rem 3rem;
+    padding: 5rem 2.4rem;
   }
   .subHeading {
     /* 24 / 30 / 36 / 44 / 52 /  */
@@ -525,13 +527,13 @@
   .containerPrices {
     max-width: 100rem;
     margin: 0 auto;
-    padding: 9rem 3.2rem;
+    padding: 9rem 2.4rem;
   }
   .containerPricing {
     max-width: 100rem;
     margin: 0 auto;
     text-align: center;
-    padding: 5rem 3.2rem;
+    padding: 5rem 2.4rem;
   }
   .pricingCardBoxGrid {
     display: grid;
