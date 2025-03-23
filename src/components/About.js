@@ -20,7 +20,7 @@ export default function About() {
           </div>
           <div>
             <h2 className={styles.headingSecondary}>
-              A Summary of My Experience
+              A Snapshot of My Skills & Experience
             </h2>
           </div>
           <div className="btnCentre">

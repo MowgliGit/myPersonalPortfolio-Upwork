@@ -8,7 +8,7 @@ export default function VisionHome() {
       <section className={`section ${styles.sectionVisionHome}`}>
         <div className={` ${styles.containerVisionHome}`}>
           <h1 className={styles.headingPrimary}>
-            Got a Vision? Let’s Bring It to Life
+            Have a Vision? Let’s Make It a Reality.
           </h1>
           <div className={styles.buttonWrapper}>
             <ButtonSecondary text="Pricing & Offers" link="/Prices" />

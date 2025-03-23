@@ -16,7 +16,7 @@ export default function Navigation() {
     { index: "01", name: "About", link: "/about" },
     { index: "02", name: "Services", link: "/services" },
     { index: "03", name: "Projects", link: "/projects" },
-    { index: "05", name: "Prices", link: "/prices" },
+    { index: "05", name: "Pricing", link: "/pricing" },
     { index: "06", name: "Contact", link: "/contact" },
   ];
 

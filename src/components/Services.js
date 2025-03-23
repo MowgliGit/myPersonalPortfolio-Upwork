@@ -6,49 +6,50 @@ import "../App.css";
 import ButtonSection from "./ButtonSection";
 const servicesItems = [
   {
-    icon: "icons8-responsive-design-50.png",
-    title: "Responsive Design",
-    text: "I create visually appealing websites that adapt seamlessly to various screen sizes.",
+    icon: "icons8-google-code-50.png",
+    title: "Front-end Development",
+    text: "I use HTML, CSS, JavaScript, and React to build interactive and dynamic websites.",
+  },
+  {
+    icon: "icons8-update-done-50.png",
+    title: "Ongoing Updates & Maintenance",
+    text: "I manage updates, security patches, and long-term maintenance to keep your website running smoothly.",
   },
   {
     icon: "icons8-web-design-50.png",
-    title: "Web Design",
-    text: "Creating stunning, modern, and user-friendly websites.",
-  },
-  {
-    icon: "icons8-git-50.png",
-    title: "Version Control & Git",
-    text: "Using Git for version control and collaboration within development teams.",
+    title: "Unique Web Design",
+    text: "Crafting visually stunning, modern, and user-friendly websites that stand out.",
   },
   {
     icon: "/icons8-identity-50.png",
     title: "Brand Identity",
-    text: "Crafting brand identities that make your business stand out.",
-  },
-  {
-    icon: "icons8-bursts-50.png",
-    title: "Organized UI Layers",
-    text: "Designing organized layers that enhance the user experience.",
-  },
-  {
-    icon: "icons8-layout-50.png",
-    title: "Multi-Page Website",
-    text: "Premium-quality, clean, and modern designs.",
-  },
-  {
-    icon: "icons8-google-code-50.png",
-    title: "Front-end Development",
-    text: "I use HTML, CSS, and JavaScript to build interactive websites.",
+    text: "Developing a strong visual identity that sets your business apart.",
   },
   {
     icon: "icons8-seo-50.png",
     title: "SEO Strategy",
-    text: "I optimize websites to improve rankings, driving more traffic and increasing visibility.",
+    text: "Optimizing websites for better search rankings, driving more traffic and engagement.",
   },
   {
-    icon: "icons8-imac-settings-50.png",
-    title: "JavaScript Development",
-    text: "Utilizing modern frameworks like React to ensure high performance.",
+    icon: "icons8-responsive-design-50.png",
+    title: "Responsive Design",
+    text: "Creating adaptable websites that provide a seamless experience across all devices.",
+  },
+  {
+    icon: "icons8-layout-50.png",
+    title: "Single & Multi-Page Websites",
+    text: "Building both structured multi-page sites and sleek single-page website.",
+  },
+  {
+    icon: "icons8-optimization-64.png",
+    title: "Performance Optimization",
+    text: "Enhancing site speed, efficiency, and overall performance.",
+  },
+
+  {
+    icon: "icons8-git-50.png",
+    title: "Version Control & Git",
+    text: "Using Git for version control and collaboration within development teams.",
   },
 ];
 
@@ -63,7 +64,7 @@ const Services = () => {
             <span className={styles.line}></span>
           </div>
           <div>
-            <h2 className={styles.headingSecondary}>What You’ll Get</h2>
+            <h2 className={styles.headingSecondary}>What I Can Do for You</h2>
           </div>
           <div className="btnCentre">
             <ButtonSection text="View Services" link="#sectionServicesPlan" />
@@ -74,11 +75,11 @@ const Services = () => {
         <div className={styles.containerServiceBox}>
           <div className={styles.servicesBoxPlan}>
             <h3 className={styles.headingTertiary}>
-              How I Can Help with Your Next Project
+              How I Help Bring Your Web Vision to Life
             </h3>
             <p className={styles.servicesParagraph}>
-              Everything you need for a seamless and professional design
-              experience.
+              A seamless and professional web design experience from start to
+              finish, tailored to your business needs.
             </p>
           </div>
           <div className={`${styles.servicesBoxItems}`}>

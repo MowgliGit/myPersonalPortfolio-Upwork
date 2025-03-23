@@ -1,5 +1,6 @@
 import Navigation from "./Navigation";
 import styles from "../styles/Prices.module.css";
+import PopupWindow from "./PopupWindow";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import "../App.css";
@@ -19,7 +20,9 @@ const pricingData = [
       "Basic SEO optimization",
       "1 round of revisions",
       "Social media integration",
-      "CMS Implementation",
+      "Basic content updates",
+      "* text/image/links changes",
+      "* 2 minor updates in 1 month",
     ],
   },
   {
@@ -36,7 +39,9 @@ const pricingData = [
       "HTML/CSS/JS Dev",
       "CSS animations",
       "Social media integration",
-      "CMS Implementation",
+      "Content & layout updates",
+      "* small layout adjustments",
+      "* 4 updates in 2 month.",
     ],
   },
   {
@@ -51,10 +56,13 @@ const pricingData = [
       "Advanced SEO opt.",
       "4 rounds of revisions",
       "CSS/JS animations",
-      "HTML/CSS/JS/React Dev",
-      "API Integration",
+      "HTML/CSS/JS/React dev",
+      "API integration",
       "Social media integration",
-      "CMS Implementation",
+      "Premium maintenance",
+      "* functionality updates",
+      "* content, design-upgrades",
+      "* 6 updates in 3 month",
     ],
   },
 ];
@@ -123,14 +131,14 @@ const PricingCard = ({
   );
 };
 // Ensure Prices is exported as the default export
-const Prices = ({ isMenuVisible, toggleMenu }) => {
+const Pricing = ({ isMenuVisible, toggleMenu }) => {
   return (
     <>
       <section className={`${styles.sectionPrices} `}>
         <Navigation />
         <div className={styles.containerPrices}>
           <div className={styles.subHeading}>
-            <h6>Prices</h6>
+            <h6>Pricing</h6>
             <span className={styles.line}></span>
           </div>
           <div>
@@ -139,10 +147,7 @@ const Prices = ({ isMenuVisible, toggleMenu }) => {
             </h2>
           </div>
           <div className="btnCentre">
-            <ButtonSection
-              text="View Pricing Plans"
-              link="#sectionPricingBox"
-            />
+            <ButtonSection text="See My Packages" link="#sectionPricingBox" />
           </div>
         </div>
       </section>
@@ -150,7 +155,7 @@ const Prices = ({ isMenuVisible, toggleMenu }) => {
       <section className={styles.sectionPricingBox} id="sectionPricingBox">
         <div className={styles.containerPricing}>
           <h3 className={`mb ${styles.headingTertiary}`}>
-            Find the Plan That Fits You Best
+            Choose a Package That Suits Your Needs
           </h3>
           <div className={`${styles.pricingCardBoxGrid}`}>
             {pricingData.map((plan, index) => (
@@ -167,11 +172,18 @@ const Prices = ({ isMenuVisible, toggleMenu }) => {
               />
             ))}
           </div>
+          <p className={`${styles.paragraphText} ${styles.paragraphTextmb} `}>
+            For clients who need ongoing support after their initial project is
+            completed, I offer monthly maintenance and assistance.
+          </p>
         </div>
+
+        <PopupWindow />
       </section>
+
       <Footer />
     </>
   );
 };
 
-export default Prices;
+export default Pricing;

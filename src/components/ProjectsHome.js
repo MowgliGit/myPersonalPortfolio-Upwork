@@ -13,9 +13,9 @@ const projectsCards = [
   },
   {
     id: 2,
-    title: "Nonprofit Org",
-    image: "charito.png",
-    link: "https://mowgligit.github.io/charitoNonProfitOrg/",
+    title: "Raw Meal",
+    image: "raw.png",
+    link: "https://website-for-raw-meals.netlify.app/",
   },
   {
     id: 3,
@@ -42,10 +42,10 @@ export default function ProjectsHome({ isMenuVisible, toggleMenu }) {
               Here’s a selection of my work
             </h4>
             <p className={styles.paragraphText}>
-              Each project showcases my passion for creating innovative
-              solutions and delivering high-quality results. From design to
-              deployment, these works highlight my technical expertise and
-              creativity.
+              Each one reflects my dedication to crafting high-performance,
+              custom-coded solutions. From design to development, I focus on
+              delivering visually stunning, user-friendly, and technically sound
+              websites.
             </p>
             <p className={styles.paragraphText}></p>
           </div>

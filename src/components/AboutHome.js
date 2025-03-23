@@ -22,15 +22,16 @@ export default function AboutMe({ isMenuVisible, toggleMenu }) {
               Hi, I'm <span>Marina</span>
             </h3>
             <p className={styles.paragraphText}>
-              I'm a front-end developer specializing in clean, custom-coded
-              websites. <br />I help businesses create fast, user-friendly, and
-              visually stunning web experiences—without relying on WordPress or
-              Shopify templates.
+              A front-end developer specializing in custom, high-performance
+              websites. No WordPress, no Shopify, just clean, modern code built
+              from scratch.
             </p>
             <p className={styles.paragraphText}>
-              Whether you're looking for a landing page, portfolio, or full
-              business website, I deliver performance-driven solutions with
-              clean, maintainable code.
+              I help businesses establish a strong online presence with fast,
+              user-friendly, and visually compelling web experiences. Whether
+              you need a landing page, portfolio, or a full business website, I
+              create solutions that are tailored to your brand and built to
+              last.
             </p>
           </div>
           <div className={styles.aboutImgBox}>

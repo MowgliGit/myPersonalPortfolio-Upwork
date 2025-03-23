@@ -73,7 +73,7 @@ export default function Resume() {
   return (
     <div className="grid grid-2-cols">
       <div className={styles.educationBox}>
-        <h3 className={`${styles.headingQuarternary} pl`}>My Education</h3>
+        <h4 className={`${styles.headingQuarternary} pl`}>My Education</h4>
         <ul className={`${styles.navList} ${styles.vLine}`}>
           {educationItems.map((item) => (
             <li key={item.index} className={styles.navLink}>

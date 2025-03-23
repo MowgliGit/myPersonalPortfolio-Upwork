@@ -6,9 +6,11 @@
   padding: 0.8rem 0 0.8rem 0;
   overflow: hidden;
   height: auto;
+  position: relative !important;
+  z-index: -1;
 }
 .footerContainer {
-  padding: 1rem 3.2rem;
+  padding: 1.2rem 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4.8rem;
@@ -16,6 +18,8 @@
   justify-content: space-between;
   overflow: hidden;
   margin-top: auto;
+  position: relative;
+  z-index: -1;
 }
 .headingQuaternary {
   color: #f8f9fa;
@@ -151,13 +155,14 @@
 /* Bellow 567px */
 @media (max-width: 35.43em) {
   .footerContainer {
-    padding: 2.4rem 3.2rem;
+    padding: 1.6rem 2.4rem;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1.2rem;
+    row-gap: 0.8rem;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: 1;
   }
   .footerContact {
     display: flex;
@@ -165,6 +170,8 @@
     justify-content: center;
     align-items: center;
     gap: 0rem !important;
+    overflow: hidden;
+    z-index: 1;
   }
   .headingQuaternary {
     margin-bottom: 1.2rem;
@@ -189,13 +196,14 @@
 /* Bellow 400px */
 @media (max-width: 25em) {
   .footerContainer {
-    padding: 3.2rem 2.4rem;
+    padding: 1.6rem 2.4rem;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 0.8rem;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: 1;
   }
   .contactBtns {
     display: flex;

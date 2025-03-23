@@ -16,11 +16,13 @@
   background-size: cover;
   position: relative;
   z-index: 1;
+  /* ******** */
+  height: 80vh;
 }
 .containerContact {
   max-width: 135rem;
   margin: 0 auto;
-  padding: 12.8rem 5rem 17.22rem 5rem;
+  padding: 20rem 5rem 25rem 5rem;
 }
 .subHeading {
   /* 24 / 30 / 36 / 44 / 52 /  */

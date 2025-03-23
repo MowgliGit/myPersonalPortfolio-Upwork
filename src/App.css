@@ -52,6 +52,9 @@ body {
   scroll-behavior: smooth;
   hyphens: auto;
 }
+body.popupOpen {
+  overflow: hidden;
+}
 
 .mainPage {
   max-width: 155rem;
@@ -139,6 +142,9 @@ body {
 }
 .pl {
   padding-left: 1.8rem;
+}
+.px {
+  padding: 2.4rem;
 }
 .subTitle {
   display: inline-block;

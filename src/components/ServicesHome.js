@@ -40,15 +40,16 @@ export default function ServicesHome({ isMenuVisible, toggleMenu }) {
           >
             <p className={styles.paragraphText}>
               As a front-end developer, I offer a range of services to bring
-              your digital projects to life. I specialize in building
-              responsive, user-friendly websites that engage visitors and drive
-              results.
+              your digital projects to life. My expertise includes front-end
+              development, unique web design, SEO strategies and ongoing updates
+              to keep your website secure and up-to-date.
             </p>
 
             <p className={styles.paragraphText}>
-              My work focuses on seamless navigation, dynamic components, and
-              clean, efficient code. Every project features modern design,
-              interactive elements, and a strong emphasis on user experience.
+              From creating visually stunning layouts to implementing organized
+              UI layers and responsive designs, I ensure every project is built
+              for seamless navigation and optimal performance across all
+              devices.
             </p>
           </div>
         </div>
