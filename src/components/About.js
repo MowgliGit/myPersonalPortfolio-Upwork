@@ -24,7 +24,10 @@ export default function About() {
             </h2>
           </div>
           <div className="btnCentre">
-            <ButtonSection text="View My Resume" link="#sectionResume" />
+            <ButtonSection
+              text="See My Skills & Experience"
+              link="#sectionResume"
+            />
           </div>
         </div>
       </section>

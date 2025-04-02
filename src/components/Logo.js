@@ -59,8 +59,12 @@ export default function Logo() {
       </div>
       <div className={styles.sectionCV}>
         <ButtonPrimary
-          text="View my CV"
+          text="Check Out My CV"
           link="https://mowgligit.github.io/CV-with-bootstrap/"
+        />
+        <ButtonPrimary
+          text="My Interactive Resume"
+          link="https://digitalresumecv.netlify.app/"
         />
       </div>
     </>
